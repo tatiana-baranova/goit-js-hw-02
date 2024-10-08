@@ -4,9 +4,9 @@ function checkForSpam(message) {
     const normstr = message.toLowerCase();
     if (normstr.includes(blackListenWord1) || normstr.includes(blackListenWord2))
     {
-        return `true`;
+        return true;
     } else {
-        return `false`;
+        return false;
     }
 }
     
